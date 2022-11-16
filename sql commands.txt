@@ -1,0 +1,25 @@
+CREATE DATABASE ILASR;
+USE ILASR;
+
+CREATE TABLE conta  (
+Id_conta int NOT NULL AUTO_INCREMENT,
+Resumo varchar (11) NOT NULL,
+Nome varchar (60) NOT NULL,
+Email varchar (100) NOT NULL,
+Senha varchar (100) NOT NULL,
+PRIMARY KEY (Id_conta)
+);
+
+CREATE TABLE receita (
+Id_receita int NOT NULL AUTO_INCREMENT,
+Nome_receita varchar (20) NOT NULL,
+Descricao varchar (250) NOT NULL,
+Data_publicacao datetime NOT NULL,
+curtidas int NOT NULL,
+Nome varchar (60) NOT NULL,
+PRIMARY KEY (Id_receita)
+);
+
+
+SELECT * FROM receita;
+SELECT * FROM conta;
